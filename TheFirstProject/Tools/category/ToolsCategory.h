@@ -15,5 +15,6 @@
 #import "NSDictionary+SomeFunction.h"
 #import "NSString+SomeFunction.h"
 #import "UIImage+SomeFunction.h"
+#import "UIButton+Block.h"
 
 #endif /* ToolsCategory_h */

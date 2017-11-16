@@ -12,4 +12,7 @@
 #import "ToolsMacros.h"
 #import "ToolsCategory.h"
 
+#define WeakSelf    __weak __typeof(&*self)    weakSelf  = self;
+#define StrongSelf  __strong __typeof(&*self) strongSelf = weakSelf;
+
 #endif /* PrefixHeader_pch */

@@ -14,6 +14,7 @@
 		9ADFB1591FBAEEDD006D1E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ADFB1581FBAEEDD006D1E9B /* Assets.xcassets */; };
 		9ADFB15C1FBAEEDD006D1E9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADFB15A1FBAEEDD006D1E9B /* LaunchScreen.storyboard */; };
 		A82FE7C2351B99B86B724FCC /* libPods-TheFirstProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D68C746BC93370C7BCB38F42 /* libPods-TheFirstProject.a */; };
+		DA504B2F1FBD8938000AE3D8 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = DA504B2E1FBD8938000AE3D8 /* UIButton+Block.m */; };
 		DAF590E41FBBDB2000460D26 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF590E31FBBDB2000460D26 /* Foundation+Log.m */; };
 		DAF590EA1FBBDD5600460D26 /* UIColor+SomeFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF590E91FBBDD5600460D26 /* UIColor+SomeFunction.m */; };
 		DAF590ED1FBBDF4500460D26 /* NSArray+SomeFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF590EC1FBBDF4500460D26 /* NSArray+SomeFunction.m */; };
@@ -41,6 +42,8 @@
 		D68C746BC93370C7BCB38F42 /* libPods-TheFirstProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheFirstProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D885A7B73F801F49372560C6 /* Pods-TheFirstProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheFirstProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheFirstProject/Pods-TheFirstProject.release.xcconfig"; sourceTree = "<group>"; };
 		DA2B29D21FBAFF3600D49FCA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DA504B2D1FBD8938000AE3D8 /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
+		DA504B2E1FBD8938000AE3D8 /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
 		DAF590E01FBBD9AC00460D26 /* ToolsCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolsCategory.h; sourceTree = "<group>"; };
 		DAF590E31FBBDB2000460D26 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		DAF590E81FBBDD5600460D26 /* UIColor+SomeFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SomeFunction.h"; sourceTree = "<group>"; };
@@ -168,6 +171,8 @@
 				DAF591001FBBEBE500460D26 /* UIView+Frame.m */,
 				DAF590FC1FBBEB8F00460D26 /* UITabBar+Custom.h */,
 				DAF590FD1FBBEB9500460D26 /* UITabBar+Custom.m */,
+				DA504B2D1FBD8938000AE3D8 /* UIButton+Block.h */,
+				DA504B2E1FBD8938000AE3D8 /* UIButton+Block.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 				9ADFB14E1FBAEEDD006D1E9B /* main.m in Sources */,
 				DAF590FE1FBBEB9500460D26 /* UITabBar+Custom.m in Sources */,
 				DAF590ED1FBBDF4500460D26 /* NSArray+SomeFunction.m in Sources */,
+				DA504B2F1FBD8938000AE3D8 /* UIButton+Block.m in Sources */,
 				DAF590E41FBBDB2000460D26 /* Foundation+Log.m in Sources */,
 				DAF590F41FBBE32C00460D26 /* NSString+SomeFunction.m in Sources */,
 			);
