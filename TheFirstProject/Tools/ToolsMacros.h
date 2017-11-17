@@ -62,6 +62,8 @@
 #define RGBColor_a(_r, _g, _b, _a)  [UIColor colorWithRed:(_r)/255.0 green:(_g)/255.0 blue:(_b)/255.0 alpha:_a]
 #define RGBColor_f(_f)              [UIColor colorWithRed:((float)((_f & 0xFF0000) >> 16))/255.0 green:((float)((_f & 0xFF00)>> 8))/255.0 blue:((float) (_f & 0xFF))/255.0 alpha:1.0f]
 
+#define kBackgroundAlphatColor [UIColor colorWithWhite:0 alpha:0.3] //黑色半透明背景
+
 
 
 

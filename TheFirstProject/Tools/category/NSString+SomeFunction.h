@@ -29,4 +29,5 @@
 
 ///MD5加密
 + (NSString *) MD5Digest:(NSString *)str;
+
 @end

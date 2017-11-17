@@ -9,8 +9,10 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-#import "ToolsMacros.h"
-#import "ToolsCategory.h"
+#import "BaseTools.h"
+
+//Pods
+#import "MJRefresh.h"
 
 #define WeakSelf    __weak __typeof(&*self)    weakSelf  = self;
 #define StrongSelf  __strong __typeof(&*self) strongSelf = weakSelf;

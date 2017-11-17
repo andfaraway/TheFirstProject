@@ -20,4 +20,7 @@
 
 /**  压缩图片到指定大小kb */
 +(UIImage *)scaleImage:(UIImage *)image toKb:(NSInteger)kb;
+
+/** 获取一张纯色图片  */
++ (UIImage *)imageWithColor:(UIColor *)color;
 @end

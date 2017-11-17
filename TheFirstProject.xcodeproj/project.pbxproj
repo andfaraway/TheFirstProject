@@ -14,6 +14,8 @@
 		9ADFB1591FBAEEDD006D1E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ADFB1581FBAEEDD006D1E9B /* Assets.xcassets */; };
 		9ADFB15C1FBAEEDD006D1E9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADFB15A1FBAEEDD006D1E9B /* LaunchScreen.storyboard */; };
 		A82FE7C2351B99B86B724FCC /* libPods-TheFirstProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D68C746BC93370C7BCB38F42 /* libPods-TheFirstProject.a */; };
+		DA3A30C81FBEC7D0003D4B3D /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3A30C71FBEC7D0003D4B3D /* UIViewController+BackButtonHandler.m */; };
+		DA3A30CD1FBED0BD003D4B3D /* BaseTools.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3A30CC1FBED0BD003D4B3D /* BaseTools.m */; };
 		DA504B2F1FBD8938000AE3D8 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = DA504B2E1FBD8938000AE3D8 /* UIButton+Block.m */; };
 		DAF590E41FBBDB2000460D26 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF590E31FBBDB2000460D26 /* Foundation+Log.m */; };
 		DAF590EA1FBBDD5600460D26 /* UIColor+SomeFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF590E91FBBDD5600460D26 /* UIColor+SomeFunction.m */; };
@@ -42,6 +44,10 @@
 		D68C746BC93370C7BCB38F42 /* libPods-TheFirstProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheFirstProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D885A7B73F801F49372560C6 /* Pods-TheFirstProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheFirstProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheFirstProject/Pods-TheFirstProject.release.xcconfig"; sourceTree = "<group>"; };
 		DA2B29D21FBAFF3600D49FCA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DA3A30C61FBEC7D0003D4B3D /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
+		DA3A30C71FBEC7D0003D4B3D /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
+		DA3A30CB1FBED0BD003D4B3D /* BaseTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseTools.h; path = category/BaseTools.h; sourceTree = "<group>"; };
+		DA3A30CC1FBED0BD003D4B3D /* BaseTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseTools.m; path = category/BaseTools.m; sourceTree = "<group>"; };
 		DA504B2D1FBD8938000AE3D8 /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
 		DA504B2E1FBD8938000AE3D8 /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
 		DAF590E01FBBD9AC00460D26 /* ToolsCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolsCategory.h; sourceTree = "<group>"; };
@@ -143,8 +149,10 @@
 		DAF590AB1FBBD3CE00460D26 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				DAF5910B1FBBEEB600460D26 /* CoustomControls */,
+				DA3A30CB1FBED0BD003D4B3D /* BaseTools.h */,
+				DA3A30CC1FBED0BD003D4B3D /* BaseTools.m */,
 				DAF590EE1FBBE13F00460D26 /* ToolsMacros.h */,
+				DAF5910B1FBBEEB600460D26 /* CoustomControls */,
 				DAF590AE1FBBD81C00460D26 /* category */,
 			);
 			path = Tools;
@@ -173,6 +181,8 @@
 				DAF590FD1FBBEB9500460D26 /* UITabBar+Custom.m */,
 				DA504B2D1FBD8938000AE3D8 /* UIButton+Block.h */,
 				DA504B2E1FBD8938000AE3D8 /* UIButton+Block.m */,
+				DA3A30C61FBEC7D0003D4B3D /* UIViewController+BackButtonHandler.h */,
+				DA3A30C71FBEC7D0003D4B3D /* UIViewController+BackButtonHandler.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -228,6 +238,7 @@
 				TargetAttributes = {
 					9ADFB1481FBAEEDD006D1E9B = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 95ED8Y5KT9;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -325,6 +336,7 @@
 			files = (
 				DAF591011FBBEBE500460D26 /* UIView+Frame.m in Sources */,
 				9ADFB1541FBAEEDD006D1E9B /* ViewController.m in Sources */,
+				DA3A30CD1FBED0BD003D4B3D /* BaseTools.m in Sources */,
 				DAF590F71FBBE80400460D26 /* UIImage+SomeFunction.m in Sources */,
 				DAF590F11FBBE28200460D26 /* NSDictionary+SomeFunction.m in Sources */,
 				DAF5910A1FBBED8000460D26 /* UINavigationBar+SomeFounction.m in Sources */,
@@ -333,6 +345,7 @@
 				DAF590EA1FBBDD5600460D26 /* UIColor+SomeFunction.m in Sources */,
 				9ADFB14E1FBAEEDD006D1E9B /* main.m in Sources */,
 				DAF590FE1FBBEB9500460D26 /* UITabBar+Custom.m in Sources */,
+				DA3A30C81FBEC7D0003D4B3D /* UIViewController+BackButtonHandler.m in Sources */,
 				DAF590ED1FBBDF4500460D26 /* NSArray+SomeFunction.m in Sources */,
 				DA504B2F1FBD8938000AE3D8 /* UIButton+Block.m in Sources */,
 				DAF590E41FBBDB2000460D26 /* Foundation+Log.m in Sources */,
@@ -457,6 +470,7 @@
 			baseConfigurationReference = 4BBE3AB8F30FBDAB7DD35173 /* Pods-TheFirstProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 95ED8Y5KT9;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TheFirstProject/PrefixHeader.pch";
 				INFOPLIST_FILE = TheFirstProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -471,6 +485,7 @@
 			baseConfigurationReference = D885A7B73F801F49372560C6 /* Pods-TheFirstProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 95ED8Y5KT9;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TheFirstProject/PrefixHeader.pch";
 				INFOPLIST_FILE = TheFirstProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
