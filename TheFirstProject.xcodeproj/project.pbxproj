@@ -14,6 +14,10 @@
 		9ADFB1591FBAEEDD006D1E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ADFB1581FBAEEDD006D1E9B /* Assets.xcassets */; };
 		9ADFB15C1FBAEEDD006D1E9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADFB15A1FBAEEDD006D1E9B /* LaunchScreen.storyboard */; };
 		A82FE7C2351B99B86B724FCC /* libPods-TheFirstProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D68C746BC93370C7BCB38F42 /* libPods-TheFirstProject.a */; };
+		DA022B7B1FC2CEDC007B7147 /* BatteryInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA022B741FC2CEDC007B7147 /* BatteryInfoManager.m */; };
+		DA022B7C1FC2CEDC007B7147 /* DeviceDataLibrery.m in Sources */ = {isa = PBXBuildFile; fileRef = DA022B761FC2CEDC007B7147 /* DeviceDataLibrery.m */; };
+		DA022B7D1FC2CEDC007B7147 /* DeviceInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA022B781FC2CEDC007B7147 /* DeviceInfoManager.m */; };
+		DA022B7E1FC2CEDC007B7147 /* NetWorkInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA022B7A1FC2CEDC007B7147 /* NetWorkInfoManager.m */; };
 		DA3A30C81FBEC7D0003D4B3D /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3A30C71FBEC7D0003D4B3D /* UIViewController+BackButtonHandler.m */; };
 		DA3A30CD1FBED0BD003D4B3D /* BaseTools.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3A30CC1FBED0BD003D4B3D /* BaseTools.m */; };
 		DA504B2F1FBD8938000AE3D8 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = DA504B2E1FBD8938000AE3D8 /* UIButton+Block.m */; };
@@ -43,6 +47,14 @@
 		9ADFB15D1FBAEEDD006D1E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D68C746BC93370C7BCB38F42 /* libPods-TheFirstProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheFirstProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D885A7B73F801F49372560C6 /* Pods-TheFirstProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheFirstProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheFirstProject/Pods-TheFirstProject.release.xcconfig"; sourceTree = "<group>"; };
+		DA022B731FC2CEDC007B7147 /* BatteryInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatteryInfoManager.h; sourceTree = "<group>"; };
+		DA022B741FC2CEDC007B7147 /* BatteryInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatteryInfoManager.m; sourceTree = "<group>"; };
+		DA022B751FC2CEDC007B7147 /* DeviceDataLibrery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceDataLibrery.h; sourceTree = "<group>"; };
+		DA022B761FC2CEDC007B7147 /* DeviceDataLibrery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceDataLibrery.m; sourceTree = "<group>"; };
+		DA022B771FC2CEDC007B7147 /* DeviceInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfoManager.h; sourceTree = "<group>"; };
+		DA022B781FC2CEDC007B7147 /* DeviceInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfoManager.m; sourceTree = "<group>"; };
+		DA022B791FC2CEDC007B7147 /* NetWorkInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkInfoManager.h; sourceTree = "<group>"; };
+		DA022B7A1FC2CEDC007B7147 /* NetWorkInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkInfoManager.m; sourceTree = "<group>"; };
 		DA2B29D21FBAFF3600D49FCA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		DA3A30C61FBEC7D0003D4B3D /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
 		DA3A30C71FBEC7D0003D4B3D /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
@@ -146,9 +158,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DA022B721FC2CEDC007B7147 /* DeviceTools */ = {
+			isa = PBXGroup;
+			children = (
+				DA022B731FC2CEDC007B7147 /* BatteryInfoManager.h */,
+				DA022B741FC2CEDC007B7147 /* BatteryInfoManager.m */,
+				DA022B751FC2CEDC007B7147 /* DeviceDataLibrery.h */,
+				DA022B761FC2CEDC007B7147 /* DeviceDataLibrery.m */,
+				DA022B771FC2CEDC007B7147 /* DeviceInfoManager.h */,
+				DA022B781FC2CEDC007B7147 /* DeviceInfoManager.m */,
+				DA022B791FC2CEDC007B7147 /* NetWorkInfoManager.h */,
+				DA022B7A1FC2CEDC007B7147 /* NetWorkInfoManager.m */,
+			);
+			path = DeviceTools;
+			sourceTree = "<group>";
+		};
 		DAF590AB1FBBD3CE00460D26 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				DA022B721FC2CEDC007B7147 /* DeviceTools */,
 				DA3A30CB1FBED0BD003D4B3D /* BaseTools.h */,
 				DA3A30CC1FBED0BD003D4B3D /* BaseTools.m */,
 				DAF590EE1FBBE13F00460D26 /* ToolsMacros.h */,
@@ -346,10 +374,14 @@
 				9ADFB14E1FBAEEDD006D1E9B /* main.m in Sources */,
 				DAF590FE1FBBEB9500460D26 /* UITabBar+Custom.m in Sources */,
 				DA3A30C81FBEC7D0003D4B3D /* UIViewController+BackButtonHandler.m in Sources */,
+				DA022B7E1FC2CEDC007B7147 /* NetWorkInfoManager.m in Sources */,
 				DAF590ED1FBBDF4500460D26 /* NSArray+SomeFunction.m in Sources */,
+				DA022B7C1FC2CEDC007B7147 /* DeviceDataLibrery.m in Sources */,
 				DA504B2F1FBD8938000AE3D8 /* UIButton+Block.m in Sources */,
 				DAF590E41FBBDB2000460D26 /* Foundation+Log.m in Sources */,
+				DA022B7D1FC2CEDC007B7147 /* DeviceInfoManager.m in Sources */,
 				DAF590F41FBBE32C00460D26 /* NSString+SomeFunction.m in Sources */,
+				DA022B7B1FC2CEDC007B7147 /* BatteryInfoManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

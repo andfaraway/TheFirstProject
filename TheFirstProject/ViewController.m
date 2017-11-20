@@ -13,26 +13,11 @@
 @property(nonatomic,strong) UIButton *testButton;
 @end
 
+#define currentThread [NSThread currentThread]
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.name = @"张三";
-    self.testButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    self.testButton.backgroundColor = [UIColor redColor];
-    [self.view addSubview:self.testButton];
-    
-   
-    WeakSelf;
-    [self.testButton addAction:^(UIButton *btn) {
-        NSLog(@"我被点名了%@",weakSelf.name);
-        weakSelf.name = @"李四";
-        NSLog(@"我被点名了%@",weakSelf.name);
-        weakSelf.name = @"李四";
-        NSLog(@"我被点名了%@",weakSelf.name);
-    }];
-    
-    NSLog(@"%@",self.name);
 }
 
 
