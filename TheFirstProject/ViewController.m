@@ -9,8 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-@property (nonatomic, copy) NSString *name;
-@property(nonatomic,strong) UIButton *testButton;
+
 @end
 
 #define currentThread [NSThread currentThread]
@@ -18,13 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"title";
+
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 
 @end

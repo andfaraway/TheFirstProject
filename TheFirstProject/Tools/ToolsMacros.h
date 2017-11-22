@@ -65,6 +65,8 @@
 #define kBackgroundAlphatColor [UIColor colorWithWhite:0 alpha:0.3] //黑色半透明背景
 
 
+/** 加载图片 */
+#define ImageNamed(_name)       [UIImage imageNamed:_name]
 
 
 /*****************  NSLog  ******************/

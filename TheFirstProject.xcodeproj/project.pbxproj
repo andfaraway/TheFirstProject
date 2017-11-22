@@ -21,6 +21,9 @@
 		DA3A30C81FBEC7D0003D4B3D /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3A30C71FBEC7D0003D4B3D /* UIViewController+BackButtonHandler.m */; };
 		DA3A30CD1FBED0BD003D4B3D /* BaseTools.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3A30CC1FBED0BD003D4B3D /* BaseTools.m */; };
 		DA504B2F1FBD8938000AE3D8 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = DA504B2E1FBD8938000AE3D8 /* UIButton+Block.m */; };
+		DADF3E5C1FC3B67900FA4A40 /* SuperNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DADF3E551FC3B67900FA4A40 /* SuperNavVC.m */; };
+		DADF3E5E1FC3B67900FA4A40 /* SuperVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DADF3E581FC3B67900FA4A40 /* SuperVC.m */; };
+		DADF3E601FC3B67900FA4A40 /* TabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DADF3E5B1FC3B67900FA4A40 /* TabBarVC.m */; };
 		DAF590E41FBBDB2000460D26 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF590E31FBBDB2000460D26 /* Foundation+Log.m */; };
 		DAF590EA1FBBDD5600460D26 /* UIColor+SomeFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF590E91FBBDD5600460D26 /* UIColor+SomeFunction.m */; };
 		DAF590ED1FBBDF4500460D26 /* NSArray+SomeFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF590EC1FBBDF4500460D26 /* NSArray+SomeFunction.m */; };
@@ -62,6 +65,12 @@
 		DA3A30CC1FBED0BD003D4B3D /* BaseTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseTools.m; path = category/BaseTools.m; sourceTree = "<group>"; };
 		DA504B2D1FBD8938000AE3D8 /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
 		DA504B2E1FBD8938000AE3D8 /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
+		DADF3E541FC3B67900FA4A40 /* SuperNavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperNavVC.h; sourceTree = "<group>"; };
+		DADF3E551FC3B67900FA4A40 /* SuperNavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperNavVC.m; sourceTree = "<group>"; };
+		DADF3E571FC3B67900FA4A40 /* SuperVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperVC.h; sourceTree = "<group>"; };
+		DADF3E581FC3B67900FA4A40 /* SuperVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperVC.m; sourceTree = "<group>"; };
+		DADF3E5A1FC3B67900FA4A40 /* TabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarVC.h; sourceTree = "<group>"; };
+		DADF3E5B1FC3B67900FA4A40 /* TabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarVC.m; sourceTree = "<group>"; };
 		DAF590E01FBBD9AC00460D26 /* ToolsCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolsCategory.h; sourceTree = "<group>"; };
 		DAF590E31FBBDB2000460D26 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		DAF590E81FBBDD5600460D26 /* UIColor+SomeFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SomeFunction.h"; sourceTree = "<group>"; };
@@ -173,9 +182,23 @@
 			path = DeviceTools;
 			sourceTree = "<group>";
 		};
+		DADF3E531FC3B67900FA4A40 /* SuperVC */ = {
+			isa = PBXGroup;
+			children = (
+				DADF3E541FC3B67900FA4A40 /* SuperNavVC.h */,
+				DADF3E551FC3B67900FA4A40 /* SuperNavVC.m */,
+				DADF3E571FC3B67900FA4A40 /* SuperVC.h */,
+				DADF3E581FC3B67900FA4A40 /* SuperVC.m */,
+				DADF3E5A1FC3B67900FA4A40 /* TabBarVC.h */,
+				DADF3E5B1FC3B67900FA4A40 /* TabBarVC.m */,
+			);
+			path = SuperVC;
+			sourceTree = "<group>";
+		};
 		DAF590AB1FBBD3CE00460D26 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				DADF3E531FC3B67900FA4A40 /* SuperVC */,
 				DA022B721FC2CEDC007B7147 /* DeviceTools */,
 				DA3A30CB1FBED0BD003D4B3D /* BaseTools.h */,
 				DA3A30CC1FBED0BD003D4B3D /* BaseTools.m */,
@@ -370,9 +393,12 @@
 				DAF5910A1FBBED8000460D26 /* UINavigationBar+SomeFounction.m in Sources */,
 				9ADFB1511FBAEEDD006D1E9B /* AppDelegate.m in Sources */,
 				DAF5910F1FBBEEB600460D26 /* LKeyChain.m in Sources */,
+				DADF3E601FC3B67900FA4A40 /* TabBarVC.m in Sources */,
 				DAF590EA1FBBDD5600460D26 /* UIColor+SomeFunction.m in Sources */,
 				9ADFB14E1FBAEEDD006D1E9B /* main.m in Sources */,
 				DAF590FE1FBBEB9500460D26 /* UITabBar+Custom.m in Sources */,
+				DADF3E5C1FC3B67900FA4A40 /* SuperNavVC.m in Sources */,
+				DADF3E5E1FC3B67900FA4A40 /* SuperVC.m in Sources */,
 				DA3A30C81FBEC7D0003D4B3D /* UIViewController+BackButtonHandler.m in Sources */,
 				DA022B7E1FC2CEDC007B7147 /* NetWorkInfoManager.m in Sources */,
 				DAF590ED1FBBDF4500460D26 /* NSArray+SomeFunction.m in Sources */,
