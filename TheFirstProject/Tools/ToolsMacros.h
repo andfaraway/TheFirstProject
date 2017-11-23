@@ -10,6 +10,11 @@
 #ifndef ToolsMacros_h
 #define ToolsMacros_h
 
+/** 全局宏定义  */
+#import "SuperVC.h"
+
+
+
 /** 硬件尺寸信息 */
 #define kWidth      [UIScreen mainScreen].bounds.size.width
 #define kHeight     [UIScreen mainScreen].bounds.size.height
@@ -17,10 +22,11 @@
 #define isPad       [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad
 
 /** 系统控件的默认高度 */
-#define kSTATUS_BAR_H   (20.f)
+#define kSTATUS_BAR_H   [UIApplication sharedApplication].statusBarFrame.size.height
 #define kNAV_BAR_H      (44.f)
+#define kNAV_STATUS_BAR_H  (64.f)
 #define kTAB_BAR_H      (49.f)
-#define kCELL_H         (44.f)
+#define kCELL_H         (45.f)
 
 /** 中英状态下键盘的高度 */
 #define kEN_KEY_BOARD_H  (216.f)

@@ -14,6 +14,7 @@
 		9ADFB1591FBAEEDD006D1E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ADFB1581FBAEEDD006D1E9B /* Assets.xcassets */; };
 		9ADFB15C1FBAEEDD006D1E9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADFB15A1FBAEEDD006D1E9B /* LaunchScreen.storyboard */; };
 		A82FE7C2351B99B86B724FCC /* libPods-TheFirstProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D68C746BC93370C7BCB38F42 /* libPods-TheFirstProject.a */; };
+		DA0067131FC67D410049E572 /* HasTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0067121FC67D410049E572 /* HasTabBarVC.m */; };
 		DA022B7B1FC2CEDC007B7147 /* BatteryInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA022B741FC2CEDC007B7147 /* BatteryInfoManager.m */; };
 		DA022B7C1FC2CEDC007B7147 /* DeviceDataLibrery.m in Sources */ = {isa = PBXBuildFile; fileRef = DA022B761FC2CEDC007B7147 /* DeviceDataLibrery.m */; };
 		DA022B7D1FC2CEDC007B7147 /* DeviceInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA022B781FC2CEDC007B7147 /* DeviceInfoManager.m */; };
@@ -50,6 +51,8 @@
 		9ADFB15D1FBAEEDD006D1E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D68C746BC93370C7BCB38F42 /* libPods-TheFirstProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheFirstProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D885A7B73F801F49372560C6 /* Pods-TheFirstProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheFirstProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheFirstProject/Pods-TheFirstProject.release.xcconfig"; sourceTree = "<group>"; };
+		DA0067111FC67D410049E572 /* HasTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HasTabBarVC.h; sourceTree = "<group>"; };
+		DA0067121FC67D410049E572 /* HasTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HasTabBarVC.m; sourceTree = "<group>"; };
 		DA022B731FC2CEDC007B7147 /* BatteryInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatteryInfoManager.h; sourceTree = "<group>"; };
 		DA022B741FC2CEDC007B7147 /* BatteryInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatteryInfoManager.m; sourceTree = "<group>"; };
 		DA022B751FC2CEDC007B7147 /* DeviceDataLibrery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceDataLibrery.h; sourceTree = "<group>"; };
@@ -189,6 +192,8 @@
 				DADF3E551FC3B67900FA4A40 /* SuperNavVC.m */,
 				DADF3E571FC3B67900FA4A40 /* SuperVC.h */,
 				DADF3E581FC3B67900FA4A40 /* SuperVC.m */,
+				DA0067111FC67D410049E572 /* HasTabBarVC.h */,
+				DA0067121FC67D410049E572 /* HasTabBarVC.m */,
 				DADF3E5A1FC3B67900FA4A40 /* TabBarVC.h */,
 				DADF3E5B1FC3B67900FA4A40 /* TabBarVC.m */,
 			);
@@ -394,6 +399,7 @@
 				9ADFB1511FBAEEDD006D1E9B /* AppDelegate.m in Sources */,
 				DAF5910F1FBBEEB600460D26 /* LKeyChain.m in Sources */,
 				DADF3E601FC3B67900FA4A40 /* TabBarVC.m in Sources */,
+				DA0067131FC67D410049E572 /* HasTabBarVC.m in Sources */,
 				DAF590EA1FBBDD5600460D26 /* UIColor+SomeFunction.m in Sources */,
 				9ADFB14E1FBAEEDD006D1E9B /* main.m in Sources */,
 				DAF590FE1FBBEB9500460D26 /* UITabBar+Custom.m in Sources */,
